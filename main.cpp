@@ -22,7 +22,7 @@ int main() {
 //    cout << (solution.isPalindrome(2147483649) ? "True" : "False") << endl;
 
     lt0013::Solution solution;
-    cout << solution.romanToInt("123") << endl;
+    cout << solution.romanToInt("MCMXCIV") << endl;
 
     return 0;
 }
