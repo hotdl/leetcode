@@ -5,6 +5,7 @@
 #include "lt0009.cpp"
 #include "lt0013.cpp"
 #include "lt0014.cpp"
+#include "lt0020.cpp"
 
 using namespace std;
 
@@ -25,9 +26,12 @@ int main() {
 //    lt0013::Solution solution;
 //    cout << solution.romanToInt("MCMXCIV") << endl;
 
-    lt0014::Solution solution;
-    vector<string> str_vec{"12", "12"};
-    cout << solution.longestCommonPrefix(str_vec) << endl;
+//    lt0014::Solution solution;
+//    vector<string> str_vec{"12", "12"};
+//    cout << solution.longestCommonPrefix(str_vec) << endl;
+
+    lt0020::Solution solution;
+    cout << solution.isValid("") << endl;
 
     return 0;
 }
