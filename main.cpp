@@ -4,6 +4,7 @@
 #include "lt0007.cpp"
 #include "lt0009.cpp"
 #include "lt0013.cpp"
+#include "lt0014.cpp"
 
 using namespace std;
 
@@ -21,8 +22,12 @@ int main() {
 //    lt0009::Solution solution;
 //    cout << (solution.isPalindrome(2147483649) ? "True" : "False") << endl;
 
-    lt0013::Solution solution;
-    cout << solution.romanToInt("MCMXCIV") << endl;
+//    lt0013::Solution solution;
+//    cout << solution.romanToInt("MCMXCIV") << endl;
+
+    lt0014::Solution solution;
+    vector<string> str_vec{"12", "12"};
+    cout << solution.longestCommonPrefix(str_vec) << endl;
 
     return 0;
 }
