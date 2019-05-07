@@ -1,11 +1,16 @@
 #include <iostream>
 
+#include "common.h"
+
 #include "lt0001.cpp"
 #include "lt0007.cpp"
 #include "lt0009.cpp"
 #include "lt0013.cpp"
 #include "lt0014.cpp"
 #include "lt0020.cpp"
+#include "lt0021.cpp"
+#include "lt0002.cpp"
+#include "lt0003.cpp"
 
 using namespace std;
 
@@ -30,8 +35,49 @@ int main() {
 //    vector<string> str_vec{"12", "12"};
 //    cout << solution.longestCommonPrefix(str_vec) << endl;
 
-    lt0020::Solution solution;
-    cout << solution.isValid("") << endl;
+//    lt0020::Solution solution;
+//    cout << solution.isValid("((") << endl;
+
+//    lt0021::Solution solution;
+//    ListNode l11(1);
+//    ListNode l12(2);
+//    ListNode l13(4);
+//    l11.next = &l12;
+//    l12.next = &l13;
+//    ListNode l21(1);
+//    ListNode l22(3);
+//    ListNode l23(4);
+//    l21.next = &l22;
+//    l22.next = &l23;
+//    ListNode* output = solution.mergeTwoLists(&l11, &l21);
+//    ListNode* ptr = output;
+//    while(ptr->next != NULL) {
+//        cout << ptr->val << "->";
+//        ptr = ptr->next;
+//    }
+//    cout << ptr->val << endl;
+
+//    lt0002::Solution solution;
+//    ListNode l11(2);
+//    ListNode l12(4);
+//    ListNode l13(3);
+//    l11.next = &l12;
+//    l12.next = &l13;
+//    ListNode l21(5);
+//    ListNode l22(6);
+//    ListNode l23(7);
+//    l21.next = &l22;
+//    l22.next = &l23;
+//    ListNode* output = solution.addTwoNumbers(&l11, &l21);
+//    ListNode* ptr = output;
+//    while(ptr->next != NULL) {
+//        cout << ptr->val << "->";
+//        ptr = ptr->next;
+//    }
+//    cout << ptr->val << endl;
+
+    lt0003::Solution solution;
+    cout << solution.lengthOfLongestSubstring("aaa") << endl;
 
     return 0;
 }
