@@ -11,6 +11,7 @@
 #include "lt0021.cpp"
 #include "lt0002.cpp"
 #include "lt0003.cpp"
+#include "lt0026.cpp"
 
 using namespace std;
 
@@ -76,8 +77,12 @@ int main() {
 //    }
 //    cout << ptr->val << endl;
 
-    lt0003::Solution solution;
-    cout << solution.lengthOfLongestSubstring("aaa") << endl;
+//    lt0003::Solution solution;
+//    cout << solution.lengthOfLongestSubstring("abba") << endl;
+
+    lt0026::Solution solution;
+    vector<int> input{1, 2, 3};
+    cout << solution.removeDuplicates(input) << endl;
 
     return 0;
 }
