@@ -3,4 +3,6 @@ project(leetcode)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(leetcode main.cpp)
+include_directories(include)
+
+add_executable(leetcode src/main.cpp)

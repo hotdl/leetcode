@@ -13,6 +13,8 @@
 #include "lt0003.cpp"
 #include "lt0026.cpp"
 #include "lt0027.cpp"
+#include "lt0028.cpp"
+#include "lt0035.cpp"
 
 using namespace std;
 
@@ -85,9 +87,12 @@ int main() {
 //    vector<int> input{1, 1, 2, 3, 3};
 //    cout << solution.removeDuplicates(input) << endl;
 
-    lt0027::Solution solution;
-    vector<int> input{1, 1, 2, 3, 3};
-    cout << solution.removeElement(input, 3) << endl;
+//    lt0028::Solution solution;
+//    cout << solution.strStr("aaa", "aaaa") << endl;
+
+    lt0035::Solution solution;
+    vector<int> input;
+    cout << solution.searchInsert(input, 3) << endl;
 
     return 0;
 }
