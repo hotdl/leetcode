@@ -15,6 +15,7 @@
 #include "lt0027.cpp"
 #include "lt0028.cpp"
 #include "lt0035.cpp"
+#include "lt0038.cpp"
 
 using namespace std;
 
@@ -90,9 +91,12 @@ int main() {
 //    lt0028::Solution solution;
 //    cout << solution.strStr("aaa", "aaaa") << endl;
 
-    lt0035::Solution solution;
-    vector<int> input;
-    cout << solution.searchInsert(input, 3) << endl;
+//    lt0035::Solution solution;
+//    vector<int> input{1,3};
+//    cout << solution.searchInsert(input, 4) << endl;
+
+    lt0038::Solution solution;
+    cout << solution.countAndSay(4) << endl;
 
     return 0;
 }
