@@ -16,6 +16,9 @@
 #include "lt0028.cpp"
 #include "lt0035.cpp"
 #include "lt0038.cpp"
+#include "lt0012.cpp"
+#include "lt0015.cpp"
+#include "lt0016.cpp"
 
 using namespace std;
 
@@ -95,8 +98,21 @@ int main() {
 //    vector<int> input{1,3};
 //    cout << solution.searchInsert(input, 4) << endl;
 
-    lt0038::Solution solution;
-    cout << solution.countAndSay(4) << endl;
+//    lt0012::Solution solution;
+//    cout << solution.intToRoman(3999) << endl;
+
+//    lt0015::Solution solution;
+//    vector<int> nums{0, 0, 0, 0};
+//    auto output = solution.threeSum(nums);
+//    for (int i = 0; i < output.size(); i++) {
+//        for (int j = 0; j < output[i].size(); j++) {
+//            cout << output[i][j] << endl;
+//        }
+//    }
+
+    lt0016::Solution solution;
+    vector<int> nums{0, 0, 0, 0};
+    cout << solution.threeSumClosest(nums, 1) << endl;
 
     return 0;
 }
