@@ -19,6 +19,8 @@
 #include "lt0012.cpp"
 #include "lt0015.cpp"
 #include "lt0016.cpp"
+#include "lt0017.cpp"
+#include "lt0018.cpp"
 
 using namespace std;
 
@@ -110,9 +112,25 @@ int main() {
 //        }
 //    }
 
-    lt0016::Solution solution;
-    vector<int> nums{0, 0, 0, 0};
-    cout << solution.threeSumClosest(nums, 1) << endl;
+//    lt0016::Solution solution;
+//    vector<int> nums{1,1,1,1};
+//    cout << solution.threeSumClosest(nums, -100) << endl;
+
+//    lt0017::Solution solution;
+//    vector<string> output = solution.letterCombinations("23");
+//    for (int i = 0; i < output.size(); i++) {
+//        cout << output[i] << endl;
+//    }
+
+    lt0018::Solution solution;
+    vector<int> input;
+    auto output = solution.fourSum(input, 1);
+    for (auto item : output) {
+        for (auto sub_item: item) {
+            cout << sub_item << " ";
+        }
+        cout << endl;
+    }
 
     return 0;
 }
