@@ -21,6 +21,8 @@
 #include "lt0016.cpp"
 #include "lt0017.cpp"
 #include "lt0018.cpp"
+#include "lt0019.cpp"
+#include "lt0022.cpp"
 
 using namespace std;
 
@@ -122,14 +124,33 @@ int main() {
 //        cout << output[i] << endl;
 //    }
 
-    lt0018::Solution solution;
-    vector<int> input;
-    auto output = solution.fourSum(input, 1);
-    for (auto item : output) {
-        for (auto sub_item: item) {
-            cout << sub_item << " ";
-        }
-        cout << endl;
+//    lt0018::Solution solution;
+//    vector<int> input{1, 0, -1, 0, -2, 2};
+//    auto output = solution.fourSum(input, 0);
+//    for (auto item : output) {
+//        for (auto sub_item: item) {
+//            cout << sub_item << " ";
+//        }
+//        cout << endl;
+//    }
+
+//    lt0019::Solution solution;
+//    ListNode *input = new ListNode(1);
+//    input->next = new ListNode(2);
+//    input->next->next = new ListNode(3);
+//    input->next->next->next = new ListNode(4);
+//    input->next->next->next->next = new ListNode(5);
+//    ListNode *output = solution.removeNthFromEnd(input, 0);
+//    ListNode *tmp = output;
+//    while (tmp != NULL) {
+//        cout << tmp->val << endl;
+//        tmp = tmp->next;
+//    }
+
+    lt0022::Solution solution;
+    vector<string> output = solution.generateParenthesis(5);
+    for (string s: output) {
+        cout << s << endl;
     }
 
     return 0;
