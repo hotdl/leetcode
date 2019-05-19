@@ -23,6 +23,9 @@
 #include "lt0018.cpp"
 #include "lt0019.cpp"
 #include "lt0022.cpp"
+#include "lt0024.cpp"
+#include "lt0029.cpp"
+#include "lt0031.cpp"
 
 using namespace std;
 
@@ -147,10 +150,35 @@ int main() {
 //        tmp = tmp->next;
 //    }
 
-    lt0022::Solution solution;
-    vector<string> output = solution.generateParenthesis(5);
-    for (string s: output) {
-        cout << s << endl;
+//    lt0022::Solution solution;
+//    vector<string> output = solution.generateParenthesis(5);
+//    for (string s: output) {
+//        cout << s << endl;
+//    }
+
+//    lt0024::Solution solution;
+//    ListNode *input = new ListNode(1);
+//    input->next = new ListNode(2);
+//    input->next->next = new ListNode(3);
+//    input->next->next->next = new ListNode(4);
+//    ListNode *output = solution.swapPairs(input);
+//    ListNode *tmp = output;
+//    while (tmp->next) {
+//        cout << tmp->val << "->";
+//        delete tmp;
+//        tmp = tmp->next;
+//    }
+//    cout << tmp->val << endl;
+//    delete tmp;
+
+//    lt0029::Solution solution;
+//    cout << solution.divide(1004958205, -2137325331) << endl;
+
+    lt0031::Solution solution;
+    vector<int> input{1, 2, 3};
+    solution.nextPermutation(input);
+    for (int item: input) {
+        cout << item << endl;
     }
 
     return 0;
