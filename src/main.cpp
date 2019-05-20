@@ -26,6 +26,8 @@
 #include "lt0024.cpp"
 #include "lt0029.cpp"
 #include "lt0031.cpp"
+#include "lt0033.cpp"
+#include "lt0034.cpp"
 
 using namespace std;
 
@@ -174,11 +176,22 @@ int main() {
 //    lt0029::Solution solution;
 //    cout << solution.divide(1004958205, -2137325331) << endl;
 
-    lt0031::Solution solution;
-    vector<int> input{1, 2, 3};
-    solution.nextPermutation(input);
-    for (int item: input) {
-        cout << item << endl;
+//    lt0031::Solution solution;
+//    vector<int> input{1,1,1};
+//    solution.nextPermutation(input);
+//    for (int item: input) {
+//        cout << item << endl;
+//    }
+
+//    lt0033::Solution solution;
+//    vector<int> input{4, 5, 1, 2, 3};
+//    cout << solution.search(input, 1) << endl;
+
+    lt0034::Solution solution;
+    vector<int> input{2, 2};
+    vector<int> output = solution.searchRange(input, 2);
+    for (int value: output) {
+        cout << value << endl;
     }
 
     return 0;
