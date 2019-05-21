@@ -28,6 +28,7 @@
 #include "lt0031.cpp"
 #include "lt0033.cpp"
 #include "lt0034.cpp"
+#include "lt0036.cpp"
 
 using namespace std;
 
@@ -37,7 +38,7 @@ int main() {
 //    lt0001::Solution solution;
 //    vector<int> nums{1, 2, 3};
 //    vector<int> res = solution.twoSum(nums, 3);
-//    cout << res[0] << "," << res[1] << endl;
+//    cout << res{0} << "," << res{1} << endl;
 
 //    lt0007::Solution solution;
 //    cout << solution.reverse(1) << endl;
@@ -114,8 +115,8 @@ int main() {
 //    vector<int> nums{0, 0, 0, 0};
 //    auto output = solution.threeSum(nums);
 //    for (int i = 0; i < output.size(); i++) {
-//        for (int j = 0; j < output[i].size(); j++) {
-//            cout << output[i][j] << endl;
+//        for (int j = 0; j < output{i}.size(); j++) {
+//            cout << output{i}{j} << endl;
 //        }
 //    }
 
@@ -126,7 +127,7 @@ int main() {
 //    lt0017::Solution solution;
 //    vector<string> output = solution.letterCombinations("23");
 //    for (int i = 0; i < output.size(); i++) {
-//        cout << output[i] << endl;
+//        cout << output{i} << endl;
 //    }
 
 //    lt0018::Solution solution;
@@ -187,12 +188,26 @@ int main() {
 //    vector<int> input{4, 5, 1, 2, 3};
 //    cout << solution.search(input, 1) << endl;
 
-    lt0034::Solution solution;
-    vector<int> input{2, 2};
-    vector<int> output = solution.searchRange(input, 2);
-    for (int value: output) {
-        cout << value << endl;
-    }
+//    lt0034::Solution solution;
+//    vector<int> input{2, 2};
+//    vector<int> output = solution.searchRange(input, 2);
+//    for (int value: output) {
+//        cout << value << endl;
+//    }
+
+    lt0036::Solution solution;
+    vector<vector<char>> input{
+            {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
+            {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+            {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+            {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+            {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
+            {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+            {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
+            {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
+            {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
+    };
+    cout << solution.isValidSudoku(input) << endl;
 
     return 0;
 }
