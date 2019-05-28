@@ -30,6 +30,7 @@
 #include "lt0034.cpp"
 #include "lt0036.cpp"
 #include "lt0039.cpp"
+#include "lt0040.cpp"
 
 using namespace std;
 
@@ -210,9 +211,19 @@ int main() {
 //    };
 //    cout << solution.isValidSudoku(input) << endl;
 
-    lt0039::Solution solution;
-    vector<int> candidates{2, 3,6,7};
-    vector<vector<int>> output = solution.combinationSum(candidates, 7);
+//    lt0039::Solution solution;
+//    vector<int> candidates{2, 3,6,7};
+//    vector<vector<int>> output = solution.combinationSum(candidates, 7);
+//    for (vector<int> subItem : output) {
+//        for (int subItem2: subItem) {
+//            cout << subItem2 << " ";
+//        }
+//        cout << endl;
+//    }
+
+    lt0040::Solution solution;
+    vector<int> canditates{110,1,2,7,6,1,5};
+    vector<vector<int>> output = solution.combinationSum2(canditates, 8);
     for (vector<int> subItem : output) {
         for (int subItem2: subItem) {
             cout << subItem2 << " ";
