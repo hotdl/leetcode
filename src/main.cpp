@@ -31,6 +31,9 @@
 #include "lt0036.cpp"
 #include "lt0039.cpp"
 #include "lt0040.cpp"
+#include "lt0043.cpp"
+#include "lt0046.cpp"
+#include "lt0047.cpp"
 
 using namespace std;
 
@@ -221,12 +224,35 @@ int main() {
 //        cout << endl;
 //    }
 
-    lt0040::Solution solution;
-    vector<int> canditates{110,1,2,7,6,1,5};
-    vector<vector<int>> output = solution.combinationSum2(canditates, 8);
-    for (vector<int> subItem : output) {
-        for (int subItem2: subItem) {
-            cout << subItem2 << " ";
+//    lt0040::Solution solution;
+//    vector<int> canditates{110,1,2,7,6,1,5};
+//    vector<vector<int>> output = solution.combinationSum2(canditates, 8);
+//    for (vector<int> subItem : output) {
+//        for (int subItem2: subItem) {
+//            cout << subItem2 << " ";
+//        }
+//        cout << endl;
+//    }
+
+//    lt0043::Solution solution;
+//    cout << solution.multiply("0", "340") << endl;
+
+//    lt0046::Solution solution;
+//    vector<int> input{1,2,3,4};
+//    vector<vector<int>> output = solution.permute(input);
+//    for (vector<int> item1 : output) {
+//        for (int item2 : item1) {
+//            cout << item2 << " ";
+//        }
+//        cout << endl;
+//    }
+
+    lt0047::Solution solution;
+    vector<int> input{0, 1, 0, 0, 9};
+    vector<vector<int>> output = solution.permuteUnique(input);
+    for (vector<int> item1 : output) {
+        for (int item2 : item1) {
+            cout << item2 << " ";
         }
         cout << endl;
     }
