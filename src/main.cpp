@@ -35,6 +35,8 @@
 #include "lt0046.cpp"
 #include "lt0047.cpp"
 #include "lt0048.cpp"
+#include "lt0049.cpp"
+#include "lt0050.cpp"
 
 using namespace std;
 
@@ -258,18 +260,31 @@ int main() {
 //        cout << endl;
 //    }
 
-    lt0048::Solution solution;
-    vector<vector<int>> matrix{{1,  2,  3,  4},
-                               {5,  6,  7,  8},
-                               {9,  10, 11, 12},
-                               {13, 14, 15, 16}};
-    solution.rotate(matrix);
-    for (vector<int> item : matrix) {
-        for (int subItem: item) {
-            cout << subItem << " ";
-        }
-        cout << endl;
-    }
+//    lt0048::Solution solution;
+//    vector<vector<int>> matrix{{1,  2,  3,  4},
+//                               {5,  6,  7,  8},
+//                               {9,  10, 11, 12},
+//                               {13, 14, 15, 16}};
+//    solution.rotate(matrix);
+//    for (vector<int> item : matrix) {
+//        for (int subItem: item) {
+//            cout << subItem << " ";
+//        }
+//        cout << endl;
+//    }
+
+//    lt0049::Solution solution;
+//    vector<string> input{"eat", "tea", "tan", "ate", "nat", "bat"};
+//    vector<vector<string>> output = solution.groupAnagrams(input);
+//    for (vector<string> dim1 : output) {
+//        for (string entry : dim1) {
+//            cout << entry << " ";
+//        }
+//        cout << endl;
+//    }
+
+    lt0050::Solution solution;
+    cout << solution.myPow(2, -2) << endl;
 
     return 0;
 }
