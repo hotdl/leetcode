@@ -34,6 +34,7 @@
 #include "lt0043.cpp"
 #include "lt0046.cpp"
 #include "lt0047.cpp"
+#include "lt0048.cpp"
 
 using namespace std;
 
@@ -247,12 +248,25 @@ int main() {
 //        cout << endl;
 //    }
 
-    lt0047::Solution solution;
-    vector<int> input{0, 1, 0, 0, 9};
-    vector<vector<int>> output = solution.permuteUnique(input);
-    for (vector<int> item1 : output) {
-        for (int item2 : item1) {
-            cout << item2 << " ";
+//    lt0047::Solution solution;
+//    vector<int> input{0, 1, 0, 0, 9};
+//    vector<vector<int>> output = solution.permuteUnique(input);
+//    for (vector<int> item1 : output) {
+//        for (int item2 : item1) {
+//            cout << item2 << " ";
+//        }
+//        cout << endl;
+//    }
+
+    lt0048::Solution solution;
+    vector<vector<int>> matrix{{1,  2,  3,  4},
+                               {5,  6,  7,  8},
+                               {9,  10, 11, 12},
+                               {13, 14, 15, 16}};
+    solution.rotate(matrix);
+    for (vector<int> item : matrix) {
+        for (int subItem: item) {
+            cout << subItem << " ";
         }
         cout << endl;
     }
