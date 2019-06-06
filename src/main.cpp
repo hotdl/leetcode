@@ -37,6 +37,7 @@
 #include "lt0048.cpp"
 #include "lt0049.cpp"
 #include "lt0050.cpp"
+#include "lt0023.cpp"
 
 using namespace std;
 
@@ -283,8 +284,28 @@ int main() {
 //        cout << endl;
 //    }
 
-    lt0050::Solution solution;
-    cout << solution.myPow(2, -2) << endl;
+//    lt0050::Solution solution;
+//    cout << solution.myPow(2, -2) << endl;
+
+    lt0023::Solution solution;
+    ListNode l1(1);
+    l1.next = new ListNode(4);
+    l1.next->next = new ListNode(5);
+    l1.next->next->next = new ListNode(6);
+    l1.next->next->next->next = new ListNode(8);
+    ListNode l2(1);
+    l2.next = new ListNode(3);
+    l2.next->next = new ListNode(4);
+    ListNode l3(2);
+    l3.next = new ListNode(6);
+    vector<ListNode *> input{&l1, &l2, &l3};
+
+    ListNode *output = solution.mergeKLists(input);
+    ListNode *tmp = output;
+    while (tmp != NULL) {
+        cout << tmp->val << " ";
+        tmp = tmp->next;
+    }
 
     return 0;
 }
